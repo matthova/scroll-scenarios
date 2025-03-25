@@ -7,8 +7,8 @@ export const range = (count: number): number[] => {
 export default function VertToHort() {
   return (
     <div className="w-full h-full bg-background text-foreground">
-      <div className="flex flex-col w-full h-full overflow-x-hidden overflow-y-scroll">
-        <div className="w-full border border-foreground overflow-x-scroll">
+      <div className="flex flex-col w-full h-full overflow-x-hidden overflow-y-scroll touch-pan-y">
+        <div className="w-full border border-foreground overflow-x-scroll touch-pan-x">
           {range(100).map((i) => (
             <React.Fragment key={i}>
               {i % 2 == 0 ? (

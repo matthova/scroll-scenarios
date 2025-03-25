@@ -43,6 +43,12 @@ export default function RootLayout({
           >
             Hort to Vert
           </Link>
+          <Link
+            href="/verty"
+            className={pathname === "/verty" ? "underline" : ""}
+          >
+            Verty
+          </Link>
         </nav>
         <div className="flex-1 min-h-0">{children}</div>
       </body>
