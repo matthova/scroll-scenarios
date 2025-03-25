@@ -4,7 +4,7 @@ import { longText } from "@/text";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
-export const range = (count: number): number[] => {
+const range = (count: number): number[] => {
   return Array.from({ length: count }, (_, index) => index);
 };
 
